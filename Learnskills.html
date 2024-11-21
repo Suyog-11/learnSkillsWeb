@@ -9,40 +9,46 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+<script src="Learnskills.js"></script>
 
 </head>
 <body>
+
+<div class="container">
+
     <div class="navbar">
         <button id="menubtn" class="ri-menu-line"  aria-label="Menu" ></button>
-    <div class="navbar-logo">
-     LearnSkills</div>
-        <div class="searchform">
-           <form>
-            <input type="search" placeholder="What do you want to learn" >
-            <button type="submit" class="searchbtn" aria-label="Search">
-                <i class="ri-search-line"></i>
-            </button>        </form>
-        </div>
-    
-    <ul class="navbar-list">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Online Learning</a></li>
-        <li class="login"><a href="#">login</a></li>
-    </ul>  
+        <div class="left">
+            <div class="navbar-logo"><a href="">Learn<span>Skills</span></a>
+            </div></div>
+         <div class="right">
+            <div class="searchform">
+                <form>
+                 <input type="search" placeholder="What do you want to learn" >
+                 <button type="submit" class="searchbtn" aria-label="Search">
+                     <i class="ri-search-line"></i>
+                 </button>        </form>
+             </div>
+         
+         <ul class="navbar-list">
+             <li><a href="#about">About us</a></li>
+             <li><a href="#courses">Courses</a></li>
+             <li><a href="#plans">Plans</a></li>
+             <li class="login"><a href="#">login</a></li>
+         </ul>  
+         </div>
+        
 
 </div>
-</div>
+
 <aside class="sidebar">
     <div class="sidebar-menu">
         <button  class=" ri-close-line" aria-label="Close"></button>
         <div class="sidebar-menu-list">
             <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Online Learning</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#courses ">Courses</a></li>
+                <li><a href="#plans">Plans</a></li>
                 <li class="login"><a href="#">login</a></li
 
             </ul>
@@ -52,21 +58,258 @@
     </div>
 
 </aside>  
-<script>
-    const menu = document.getElementById("menubtn");
-const sidebar = document.querySelector(".sidebar");
-const close = document.querySelector(".ri-close-line");
 
-menu.addEventListener("click", (e) => {
-  sidebar.classList.add("active");
-  document.body.style.overflow = "hidden";
-});
-close.addEventListener("click", (e) => {
-  sidebar.classList.remove("active");
-  document.body.style.overflow = "scroll";
-});
 
-</script>
+
+<section class="hero">
+<picture>
+    <source srcset="images/hero.jpg" media="(min-width: 768px)">
+    <img src="images/hero small.jpg" alt="">
+</picture>
+
+<div class="hero-content">
+    <h1>Expert-led courses to unlock your potential. Learn, grow, succeed.</h1>
+    <p>Unlock your future at a fraction of the cost—Courses now starting at just $9.99! and
+        upgrade your skills without breaking the bank. Special discounts available now!</p>
+</div>
+
+</section>
+    <div class="searchformmover">
+        <form>
+         <input type="search" placeholder="What do you want to learn" >
+         <button type="submit" class="searchbtn" aria-label="Search">
+             <i class="ri-search-line"></i>
+         </button>        </form>
+     </div>
+
+
+<section id="about" class="about">
+    <div  class="left">
+        <img src="images/about.png" alt="">
+
+    </div>
+    <div class="right">
+        <p><span>Unlock Your Potential with  Expert-Led <br> Online Courses!</span>
+        At LearnSkills, we make learning simple, accessible, and impactful. <br> Our platform offers expertly designed courses across technology, business, creativity, <br>and more—empowering you to gain the skills you need to achieve your goals.<br>
+            Whether you're advancing your career or exploring a new passion, LearnSkills provides <br> flexible, engaging, and industry-relevant learning experiences to help you succeed.
+            <br>Start your journey today because your future begins with learning.</p>
+            <button class="aboutbtn">learn more</button>
+
+        </div>
+        
+
+
+</section>
+
+<section id="courses" class="courses">
+    <h2>Dive into Our Expertise Areas</h2>
+    <div class="coursesmainlist">
+     <ul class="courses-list">
+         <li><a href="#python-content">Python</a></li>
+         <li><a href="#">Excel</a></li>
+        <li><a href="#">Web development</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">DataScience</a></li>
+        <li><a href="#">Amazon</a></li>
+        <li><a href="#">Drawing</a></li>
+     </ul>
+
+
+<div class="python-content">
+    <h2>Master Python: The Gateway to Programming Excellence</h2>
+    <p>Python is one of the most versatile and beginner-friendly programming languages in the world. Whether you're starting your coding journey or advancing your skills, our Python courses are designed for all levels.</p>
+<div>
+    <button class="pythonbtn">Explore</button>
+</div>
+<section class="coursescard">
+    <div class="cardslist">
+        <div class="cardthumbnail">
+            <img src="images/python.jpg" alt="">
+        </div> 
+        <h2 class="cardtitle">Complete Python Programming Bootcamp</h2>
+        <p class="cardauthor">By John Doe</p>
+        <p class="cardprice">$ 6.00 </p>
+    </div>
+    <div class="cardslist">
+        <div class="cardthumbnail">
+            <img src="images/python1.jpg" alt="">
+        </div> 
+        <h2 class="cardtitle">Python Mastery: From Beginner to Advanced</h2>
+        <p class="cardauthor">By John Doe</p>
+        <p class="cardprice">$ 5.00 </p>
+    </div>
+    <div class="cardslist">
+        <div class="cardthumbnail">
+            <img src="images/python2.jpg" alt="">
+        </div> 
+        <h2 class="cardtitle">Python Bootcamp: Learn Python from Scratch</h2>
+        <p class="cardauthor">By John Doe</p>
+        <p class="cardprice">$ 5.00 </p>
+    </div>
+    <div class="cardslist">
+        <div class="cardthumbnail">
+            <img src="images/python3.jpg" alt="">
+        </div> 
+        <h2 class="cardtitle">The Ultimate Guide to Python Development</h2>
+        <p class="cardauthor">By John Doe</p>
+        <p class="cardprice">$ 9.00 </p>
+    </div>
+    <div class="cardslist">
+        <div class="cardthumbnail">
+            <img src="images/python4.jpg" alt="">
+        </div> 
+        <h2 class="cardtitle">Full-Stack Development with Python and Django</h2>
+        <p class="cardauthor">By John Doe</p>
+        <p class="cardprice">$ 10.00 </p>
+    </div>
+    </section>
+</div>
+
+
+    </div>
+</section>
+
+<section id="plans" class="plans">
+    <h2>Upgrade Your Skills, Your Way</h2>
+    <div class="plancardwrapper">
+    <div class="plancard">
+        <h3>LearnSkills Basic</h3>
+        <p class="price">$9.99/month</p>
+        <button>Get Started</button>
+        <ul>
+          <li>Access to all free courses</li>
+          <li>Community support</li>
+          <li>5 downloadable resources</li>
+        </ul>
+    </div>
+    <div class="plancard">
+        <h3>LearnSkills Pro</h3>
+      <p class="price">$19.99/month</p>
+      <button>Get Started</button>
+      <ul>
+        <li>Access to all courses</li>
+        <li>Priority support</li>
+        <li>Unlimited downloadable resources</li>
+        <li>Certificate of completion</li>
+      </ul>
+    </div>
+    <div class="plancard">
+        <h3>LearnSkills Premium</h3>
+      <p class="price">$29.99/month</p>
+      <button>Get Started</button>
+      <ul>
+        <li>All features in Pro</li>
+        <li>1-on-1 mentorship</li>
+        <li>Live project guidance</li>
+        <li>Exclusive webinars</li>
+      </ul>
+      
+    </div>
+</div>
+</section>
+
+<section class="reviews">
+    <h2>What Our Students Say</h2>
+    <div class="reviewwrapper">
+        <div class="reviewcard">
+            
+            <h3>John Doe</h3>
+            <p>"The courses are incredibly detailed and easy to follow. I’ve learned Python and even built my first project. Highly recommended!"</p>
+            <span>⭐⭐⭐⭐⭐</span>
+            <div  class="circle"><img src="images/profile.jpg" alt=""></div>
+    </div>
+    <div class="reviewcard">
+            
+        <h3>Emily Johnson</h3>
+            <p>"I landed a new job after completing the web development course. This platform is a must for anyone looking to upskill."</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        <div class="circle"><img src="images/profile2.jpg" alt=""></div>
+</div>
+<div class="reviewcard">
+            
+    <h3>Michael Lee</h3>
+            <p>"The platform is incredibly user-friendly, and the learning resources are second to none. I’ve recommended it to all my friends."</p>
+            <span>⭐⭐⭐⭐⭐</span>
+    <div class="circle"><img src="images/profile3.jpg" alt=""></div>
+</div>
+<div class="reviewcard">
+            
+    <h3>Sarah Williams</h3>
+    <p>"LearnSkills changed the way I approach learning. The community and support make it a truly engaging experience."</p>
+    <span>⭐⭐⭐⭐⭐</span>
+    <div class="circle"><img src="images/profile1.jpg" alt=""></div>
+</div>
+<div class="reviewcard">
+            
+    <h3>Chris Adams</h3>
+    <p>"From beginner to advanced, LearnSkills offers something for everyone. I’m amazed at how much I’ve learned in just a few months!"</p>
+    <span>⭐⭐⭐⭐⭐</span>
+    <div class="circle"><img src="images/profile4.jpg" alt=""></div>
+</div>
+    
+    </div>
+    
+</section>
+
+<footer>
+    <div class="footerheading">        
+        <h2>Unlock Your Potential with <span>LearnSkills</span> – Let's Build Your Future Together</h2>
+    </div>
+    <div class="footercontainer">
+        <div class="footerleft">
+            <div class="footerlist">
+                <ul>
+                    <li><a href="">LearnSkills Business</a></li>
+                    <li><a href="">Teach on LearnSkills</a></li>
+                    <li><a href="">Get the app</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footerlist">
+                <ul>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Affiliate</a></li>
+                    <li><a href="">Investors</a></li>
+                </ul>
+            </div>
+            <div class="footerlist">
+                <ul>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Cookie settings</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+         <div class="footerright">
+            <div class="footerlogo">LearnSkills  </div>
+        
+            <div class="socialicons">
+                <h1>follow Us</h1>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-facebook-line"></i>
+                <i class="ri-youtube-line"></i>
+            </div>
+         </div>
+         
+    
+    </div>
+    <div class="footerbottom">
+        <div class="copyright">
+            <p>© 2025 LearnSkills. All rights reserved by Suyog.</p>
+        </div>
+
+
+    </div>
+
+</footer>
+
+</div>
+
 </body>
 </html>           
 
